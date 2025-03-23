@@ -4,14 +4,18 @@ import ButtonComponent from '../components/ButtonComponent.vue'
 
 const router = useRouter()
 
-const handleClick = () => {
-  router.push({ name: 'PinyinTyperSettings' })
+const goToGames = () => {
+  router.push({ name: 'GamesPage' })
+}
+
+const goToResources = () => {
+  router.push({ name: 'ResourcesPage' })
 }
 </script>
 
 <template>
-  <!-- Landing Page Image -->
-  <div class="hero bg-base-200 min-h-screen">
+  <!-- Welcome Banner -->
+  <div class="hero bg-base-200" style="min-height: calc(100vh - 4rem)">
     <div class="hero-content text-center">
       <div class="max-w-md">
         <h1 class="text-5xl font-bold">Welcome to <span class="text-green-500">ZiFlow</span>.</h1>
@@ -21,11 +25,11 @@ const handleClick = () => {
         </p>
 
         <div class="flex w-full flex-col gap-2 lg:flex-row">
-          <ButtonComponent class="flex-1" @button-click="handleClick"
+          <ButtonComponent class="flex-1" @button-click="goToGames"
             >Explore Games</ButtonComponent
           >
           <div class="divider lg:divider-horizontal"></div>
-          <ButtonComponent class="flex-1" @button-click="handleClick"
+          <ButtonComponent class="flex-1" @button-click="goToResources"
             >Explore Resources</ButtonComponent
           >
         </div>
@@ -36,7 +40,7 @@ const handleClick = () => {
   <!-- Some Site Introductions and Navigation, Maybe Tutorial Video Sometime -->
   <div>
 
-    <!-- Placeholder Carousel Here, REplace with content later -->
+    <!-- Placeholder Carousel Here, Replace with content later -->
     <div class="carousel w-full">
       <div id="slide1" class="carousel-item relative w-full">
         <img
