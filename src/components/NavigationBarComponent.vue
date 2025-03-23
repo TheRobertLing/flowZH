@@ -30,6 +30,7 @@ import { RouterLink } from 'vue-router';
         >
           <li><RouterLink to="/games">Games</RouterLink></li>
           <li><RouterLink to="/resources">Resources</RouterLink></li>
+          <li><RouterLink to="/articles">Articles</RouterLink></li>
         </ul>
       </div>
       <RouterLink to="/" class="btn btn-ghost text-xl">ZiFlow</RouterLink>
@@ -39,6 +40,7 @@ import { RouterLink } from 'vue-router';
       <ul class="menu menu-horizontal px-1">
         <li><RouterLink to="/games">Games</RouterLink></li>
         <li><RouterLink to="/resources">Resources</RouterLink></li>
+        <li><RouterLink to="/articles">Articles</RouterLink></li>
       </ul>
     </div>
     <div class="navbar-end">
