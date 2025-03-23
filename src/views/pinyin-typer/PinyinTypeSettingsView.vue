@@ -37,6 +37,7 @@ const startGame = () => {
 <template>
   <div class="bg-base-200 min-h-screen flex justify-center items-center">
     <!-- The Actual Button Itself, Move this into a Component later -->
+     
     <div class="card w-full max-w-md shadow-xl bg-base-100 p-6 sm:p-8 space-y-8 rounded-xl border">
       <h2 class="text-center text-3xl font-bold">Game Settings</h2>
 
