@@ -9,6 +9,7 @@ import ResourcesPageView from '@/views/ResourcesPageView.vue'
 import RoadMapView from '@/views/RoadMapView.vue'
 
 import { createRouter, createWebHistory } from 'vue-router'
+import ArticlesPageView from '@/views/ArticlesPageView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,8 @@ const router = createRouter({
     { path: '/resources', name: 'ResourcesPage', component: ResourcesPageView },
 
 
+    // Article Routes
+    { path: '/articles', name: 'ArticlesPage', component: ArticlesPageView },
 
 
     // Other Routes
