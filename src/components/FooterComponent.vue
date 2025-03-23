@@ -1,27 +1,33 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+</script>
 
 <template>
   <footer class="footer sm:footer-horizontal bg-base-100 shadow-sm text-base-content p-10">
     <!-- Learn Section -->
     <nav>
       <h6 class="footer-title">Learn</h6>
-      <a class="link link-hover">Games</a>
-      <a class="link link-hover">Resources</a>
-      <a class="link link-hover">Tips & Tricks</a>
+      <RouterLink to="/games" class="link link-hover">Games</RouterLink>
+      <RouterLink to="/resources" class="link link-hover">Resources</RouterLink>
+      <RouterLink to="/articles" class="link link-hover">Articles</RouterLink>
     </nav>
 
     <!-- Project Section -->
     <nav>
       <h6 class="footer-title">ZiFlow</h6>
-      <a class="link link-hover">About</a>
-      <a class="link link-hover">Roadmap</a>
-      <a class="link link-hover">Changelog</a>
+      <RouterLink to="/about" class="link link-hover">About</RouterLink>
+      <RouterLink to="/roadmap" class="link link-hover">Roadmap</RouterLink>
+      <RouterLink to="/changelog" class="link link-hover">Changelog</RouterLink>
     </nav>
 
     <!-- Connect Section -->
     <nav>
       <h6 class="footer-title">Social</h6>
-      <div class="grid grid-flow-col gap-4">
+      <a href="https://github.com/TheRobertLing" class="link link-hover" target="_blank">Github</a>
+      <a href="https://www.youtube.com/@RobertLing-r6v" class="link link-hover" target="_blank">YouTube</a>
+      <a href="mailto:lingrobert929@gmail.com" class="link link-hover">Email</a>
+
+      <!-- <div class="grid grid-flow-col gap-4">
         <a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +67,7 @@
             ></path>
           </svg>
         </a>
-      </div>
+      </div> -->
     </nav>
   </footer>
 </template>
