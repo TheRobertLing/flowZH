@@ -11,8 +11,8 @@
     </div> -->
 
     <!-- Main Content -->
-    <div class="flex flex-col max-w-352 items-center bg-base-300 grow-3 min-h-screen text-center mt-8 mb-8 rounded-xl">
-      <h2 class="text-xl font-semibold mt-8 mb-8 select-none">ZiFlow's Resources Page</h2>
+    <div class="flex flex-col max-w-352 items-center bg-base-300 grow-3 min-h-screen text-center mt-8 mb-8 rounded-xl p-8">
+      <h2 class="text-xl font-semibold mb-8 select-none">ZiFlow's Resources Page</h2>
 
       <!-- Resource List -->
       <div class="grid-container grid gap-8 mb-8 max-w-7xl">
