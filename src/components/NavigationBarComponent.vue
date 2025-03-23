@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterLink } from 'vue-router';
+
+</script>
 
 <template>
-  <div class="navbar bg-base-100 shadow-sm sticky top-0">
+  <div class="navbar bg-base-100 shadow-sm sticky top-0 z-10">
     <div class="navbar-start">
       <!-- Responsive Dropdown -->
       <div class="dropdown">
@@ -25,34 +28,17 @@
           tabindex="0"
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
         >
-          <li><a>Games</a></li>
-          <li><a>Resources</a></li>
-          <li>
-            <a>Filler Tab</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </li>
+          <li><RouterLink to="/games">Games</RouterLink></li>
+          <li><RouterLink to="/resources">Resources</RouterLink></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">ZiFlow</a>
+      <RouterLink to="/" class="btn btn-ghost text-xl">ZiFlow</RouterLink>
     </div>
 
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
-        <li><a>Games</a></li>
-        <li><a>Resources</a></li>
-
-        <li>
-          <details>
-            <summary>Filler Tab</summary>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
-        </li>
+        <li><RouterLink to="/games">Games</RouterLink></li>
+        <li><RouterLink to="/resources">Resources</RouterLink></li>
       </ul>
     </div>
     <div class="navbar-end">
