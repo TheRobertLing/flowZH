@@ -12,8 +12,8 @@ import { gameMetaInfoList } from '@/data/games';
     </div> -->
 
     <!-- Main Content -->
-    <div class="flex flex-col max-w-352 items-center bg-base-300 grow-3 min-h-screen text-center mt-8 mb-8 rounded-xl">
-      <h2 class="text-xl font-semibold mt-8 mb-8 select-none">ZiFlow's Curated Games</h2>
+    <div class="flex flex-col max-w-352 items-center bg-base-300 grow-3 min-h-screen text-center mt-8 mb-8 rounded-xl p-8">
+      <h2 class="text-xl font-semibold mb-8 select-none">ZiFlow's Curated Games</h2>
 
       <!-- Game Cards -->
       <div class="grid-container grid gap-8 mb-8 max-w-7xl">
