@@ -1,16 +1,32 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const emit = defineEmits(['enter'])
+
+const answer = ref<string>('')
+
+const handleEnter = (e: KeyboardEvent) => {
+  if (e.key === 'Enter') {
+    emit('enter', answer.value)
+    answer.value = ''
+  }
+}
+</script>
 
 <template>
-  <div class="space-y-4">
+  <div>
     <label
       for="user-input"
-      class="block text-lg font-medium text-gray-700 dark:text-gray-300"
+      class="block text-lg font-medium"
     ></label>
     <input
       id="user-input"
       type="text"
-      class="input input-bordered input-primary w-full bg-base-200 text-white placeholder-gray-400 dark:bg-base-300 dark:text-white dark:placeholder-gray-500 focus:ring-green-500 focus:border-green-500"
-      placeholder="Type something..."
+      class="input focus:outline-0 rounded-xl w-full bg-base-200 focus:border-green-500"
+      placeholder="Enter Pinyin Here"
+      maxlength="50"
+      @keydown="handleEnter"
+      v-model="answer"
     />
   </div>
 </template>
