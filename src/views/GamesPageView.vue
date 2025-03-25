@@ -5,7 +5,7 @@ import { gameMetaInfoList } from '@/data/games';
 
 <template>
 
-  <div class="bg-base-200 flex justify-center gap-8">
+  <div class="flex justify-center gap-8">
     <!-- Left Sidebar for future content-->
     <!-- <div class="border grow-1 min-h-screen">
       Left
@@ -13,7 +13,7 @@ import { gameMetaInfoList } from '@/data/games';
 
     <!-- Main Content -->
     <div class="flex flex-col max-w-352 items-center bg-base-300 grow-3 min-h-screen text-center mt-8 mb-8 rounded-xl p-8">
-      <h2 class="text-xl font-semibold mb-8 select-none">ZiFlow's Curated Games</h2>
+      <h2 class="text-3xl font-bold mb-8 select-none">ZiFlow's Curated Games</h2>
 
       <!-- Game Cards -->
       <div class="grid-container grid gap-8 mb-8 max-w-7xl">
