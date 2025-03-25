@@ -5,7 +5,7 @@ import LightDarkModeToggleComponent from './LightDarkModeToggleComponent.vue';
 </script>
 
 <template>
-  <div class="navbar bg-base-100 shadow-sm sticky top-0 z-10">
+  <div class="navbar bg-base-200 shadow-sm sticky top-0 z-20">
     <div class="navbar-start">
       <!-- Responsive Dropdown -->
       <div class="dropdown">
