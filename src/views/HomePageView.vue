@@ -20,8 +20,7 @@ const goToResources = () => {
       <div class="max-w-md">
         <h1 class="text-5xl font-bold">Welcome to <span class="text-green-500">ZiFlow</span>.</h1>
         <p class="py-6 mt-3 mb-3">
-          We offer individually handcrafted games (and more) to boost your Chinese learning
-          experience.
+          A small open project with a simple goal - make Chinese learning more accessible.
         </p>
 
         <div class="flex w-full flex-col gap-2 lg:flex-row">
