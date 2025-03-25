@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <footer class="footer sm:footer-horizontal bg-base-100 shadow-sm text-base-content p-10">
+  <footer class="footer sm:footer-horizontal bg-base-200 shadow-sm text-base-content p-10">
     <!-- Learn Section -->
     <nav>
       <h6 class="footer-title">Learn</h6>
