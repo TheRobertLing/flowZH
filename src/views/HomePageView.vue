@@ -74,7 +74,7 @@ const goToResources = () => {
     <!-- Content -->
     <div class="hero-content text-center relative z-10">
       <div class="max-w-md text-base-content">
-        <h1 class="text-5xl font-bold">Welcome to <span class="text-green-500">ZiFlow</span>.</h1>
+        <h1 class="text-5xl font-bold">Welcome to <span class="text-green-500">FlowZH</span>.</h1>
         <p class="py-6 mt-3 mb-3 text-xl">
           A small open project with a simple goal - make Chinese learning more accessible to
           everyone.
@@ -95,12 +95,12 @@ const goToResources = () => {
   <section class="mt-8 text-center max-w-352 m-auto">
     <h2 class="text-3xl font-bold mb-8">Built To Be Open</h2>
     <p class="max-w-3xl m-auto mb-8">
-      The ZiFlow Project was created with a simple goal: to provide a free and open-source platform
+      The FlowZH Project was created with a simple goal: to provide a free and open-source platform
       for learning Chinese — without barriers.
       <br /><br />
       No paywalls. No subscriptions. No locked features. Ever.
       <br /><br />
-      Every game, tool, and resource on ZiFlow is — and will always be — free to use. Built for
+      Every game, tool, and resource on FlowZH is — and will always be — free to use. Built for
       self-learners, teachers, and the curious alike.
     </p>
   </section>
@@ -112,10 +112,10 @@ const goToResources = () => {
     <h2 class="text-3xl font-bold mb-8">What's Coming Next</h2>
 
     <p class="max-w-3xl m-auto mb-8">
-      ZiFlow is still in its early stages — there's not much here yet, but it's being actively
+      FlowZH is still in its early stages — there's not much here yet, but it's being actively
       developed with more tools and features on the way.
       <br /><br />
-      The goal is to gradually grow ZiFlow into a complete resource — one small, helpful tool at a
+      The goal is to gradually grow FlowZH into a complete resource — one small, helpful tool at a
       time. If you're curious about what's coming next or want to share ideas, check out the roadmap
       and feel free to reach out.
     </p>
@@ -132,7 +132,7 @@ const goToResources = () => {
       <h2 class="mb-8 text-3xl font-bold text-center">Get In Contact</h2>
 
       <p class="mb-8 text-center max-w-2xl mx-auto">
-        The goal is to gradually grow ZiFlow into a complete resource — one small, helpful tool at a
+        The goal is to gradually grow FlowZH into a complete resource — one small, helpful tool at a
         time. If you're interested in contributing, suggesting features, or just following along,
         feel free to check out the project on
         <a href="https://github.com/your-repo" class="link">GitHub</a>.
