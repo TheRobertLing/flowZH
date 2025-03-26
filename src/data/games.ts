@@ -1,4 +1,4 @@
-// Meta information for ZiFlow games
+// Meta information for FlowZH games
 import type { GameCardData } from '@/types'
 
 export const gameMetaInfoList: GameCardData[] = [
