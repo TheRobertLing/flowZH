@@ -14,7 +14,7 @@ import { RouterLink } from 'vue-router'
 
     <!-- Project Section -->
     <nav>
-      <h6 class="footer-title">ZiFlow</h6>
+      <h6 class="footer-title">FlowZH</h6>
       <RouterLink to="/about" class="link link-hover">About</RouterLink>
       <RouterLink to="/roadmap" class="link link-hover">Roadmap</RouterLink>
       <RouterLink to="/changelog" class="link link-hover">Changelog</RouterLink>
@@ -24,7 +24,9 @@ import { RouterLink } from 'vue-router'
     <nav>
       <h6 class="footer-title">Social</h6>
       <a href="https://github.com/TheRobertLing" class="link link-hover" target="_blank">Github</a>
-      <a href="https://www.youtube.com/@RobertLing-r6v" class="link link-hover" target="_blank">YouTube</a>
+      <a href="https://www.youtube.com/@RobertLing-r6v" class="link link-hover" target="_blank"
+        >YouTube</a
+      >
       <a href="mailto:lingrobert929@gmail.com" class="link link-hover">Email</a>
 
       <!-- <div class="grid grid-flow-col gap-4">
