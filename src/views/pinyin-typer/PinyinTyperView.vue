@@ -51,7 +51,7 @@ onMounted(() => {
   // Mimick loading for a few seconds for realism
   setTimeout(() => {
     state.value = 'settings'
-  }, 3000)
+  }, 2000)
 })
 </script>
 
@@ -73,6 +73,7 @@ onMounted(() => {
         <PTGameComponent
           v-else-if="state === 'game'"
           :characters="characters"
+          :requireTone="tone"
           @replay="state = 'settings'"
         />
       </div>
@@ -94,8 +95,9 @@ onMounted(() => {
         <!-- Instructions -->
         <h4 class="text-xl font-bold">Instructions</h4>
         <p class="leading-8">
-          When the game starts, choose your desired settings and start typing! Note that certain functionalities may be
-          missing as the game is still in the process of being ported into Unity. Apologies for any inconvenience caused.
+          When the game starts, choose your desired settings and start typing! Note that certain
+          functionalities may be missing as the game is still in the process of being ported into
+          Unity. Apologies for any inconvenience caused.
         </p>
       </div>
     </div>
