@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router';
-import LightDarkModeToggleComponent from './LightDarkModeToggleComponent.vue';
-
+import { RouterLink } from 'vue-router'
+import LightDarkModeToggleComponent from './LightDarkModeToggleComponent.vue'
 </script>
 
 <template>
@@ -35,7 +34,7 @@ import LightDarkModeToggleComponent from './LightDarkModeToggleComponent.vue';
           <li><RouterLink to="/articles">Articles</RouterLink></li>
         </ul>
       </div>
-      <RouterLink to="/" class="btn btn-ghost text-xl">ZiFlow</RouterLink>
+      <RouterLink to="/" class="btn btn-ghost text-xl">FlowZH</RouterLink>
     </div>
 
     <div class="navbar-center hidden lg:flex">
