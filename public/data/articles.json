@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "slug": "welcome-to-the-first-article",
+    "date": "2025-03-25",
+    "title_zh": "欢迎来到第一篇文章",
+    "title_en": "Welcome to the First Article",
+    "description_en": "The first article of FlowZH",
+    "description_zh": "FlowZH 的第一篇文章，欢迎阅读！",
+    "content_zh": "欢迎来到第一篇文章。更多内容即将上线，敬请期待！",
+    "content_en": "Welcome to the first article. More to come — stay tuned!",
+    "tags": ["intro", "site news"]
+  }
+]
