@@ -10,5 +10,3 @@ const emit = defineEmits(['buttonClick'])
     <slot> Click Me </slot>
   </button>
 </template>
-
-
