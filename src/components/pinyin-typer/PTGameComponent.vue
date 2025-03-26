@@ -4,11 +4,12 @@ import { useToast } from 'vue-toastification'
 import type { Character } from '@/types'
 import ButtonComponent from '../ButtonComponent.vue'
 import PTInputComponent from './PTInputComponent.vue'
-import { numberToDiacritic } from 'pinyin-tools'
+import { numberToDiacritic, removeTone } from 'pinyin-tools'
 
 // Use props once backend is deployed
 const props = defineProps<{
   characters: Character[]
+  requireTone: boolean
 }>()
 
 const emit = defineEmits(['replay'])
@@ -27,29 +28,29 @@ const results: {
   isCorrect: boolean
 }[] = []
 
-const mockProps: Character[] = [
-  { simplified: '赡', pinyin: 'shàn' },
-  { simplified: '弟', pinyin: 'dì, tì, tuí' },
-  { simplified: '羔', pinyin: 'gāo' },
-  { simplified: '凸', pinyin: 'tū' },
-  { simplified: '免', pinyin: 'miǎn' },
-  { simplified: '窑', pinyin: 'yáo' },
-  { simplified: '搞', pinyin: 'gǎo' },
-  { simplified: '吧', pinyin: 'bā, ba' },
-  { simplified: '伏', pinyin: 'fú' },
-  { simplified: '分', pinyin: 'fēn, fèn' },
-]
-
 const handleInput = (answer: string): void => {
-  results.push({
-    character: mockProps[index.value].simplified,
-    expected: mockProps[index.value].pinyin,
-    received: answer,
-    isCorrect: mockProps[index.value].pinyin.split(', ').includes(numberToDiacritic(answer)),
-  })
+  if (props.requireTone) {
+    results.push({
+      character: props.characters[index.value].simplified,
+      expected: props.characters[index.value].pinyin,
+      received: answer,
+      isCorrect: props.characters[index.value].pinyin
+        .split(', ')
+        .includes(numberToDiacritic(answer)),
+    })
+  } else {
+    results.push({
+      character: props.characters[index.value].simplified,
+      expected: props.characters[index.value].pinyin,
+      received: answer,
+      isCorrect: props.characters[index.value].pinyin
+        .split(', ').map(char => removeTone(char))
+        .includes(removeTone(answer)),
+    })
+  }
 
   // Load next character
-  if (index.value < mockProps.length - 1) {
+  if (index.value < props.characters.length - 1) {
     index.value += 1
   } else {
     state.value = 'results'
@@ -57,7 +58,7 @@ const handleInput = (answer: string): void => {
 }
 
 const showHint = (): void => {
-  const py = mockProps[index.value].pinyin.split(', ')
+  const py = props.characters[index.value].pinyin.split(', ')
   const initials = py.map((char) => char[0]).join(', ')
   if (py.length > 1) {
     toast(`This is a polyphonic character and the starting letters are: ${initials}.`)
@@ -76,14 +77,14 @@ const showHint = (): void => {
     >
       <svg viewBox="0 0 100 100" class="w-full h-full" preserveAspectRatio="xMidYMid meet">
         <text x="50" y="60" text-anchor="middle" dominant-baseline="middle" font-size="100">
-          {{ mockProps[index].simplified }}
+          {{ props.characters[index].simplified }}
         </text>
       </svg>
     </div>
 
     <!-- How many characters left -->
     <div class="text-center text-xl font-bold mt-4" v-if="state === 'game'">
-      {{ index + 1 }} / {{ mockProps.length }}
+      {{ index + 1 }} / {{ props.characters.length }}
     </div>
 
     <!-- Hints and Options-->
